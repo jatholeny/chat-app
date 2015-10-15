@@ -1,0 +1,31 @@
+<section class="bg-success">
+    <h1>Registration</h1>
+    <form>
+        <!--<input type="text" placeholder="username" ng-model="user.username" required ><br>-->
+        <!--<input type="email" placeholder="email" ng-model="user.email" required><br>-->
+        <!--<input type="tel" placeholder="phone" ng-model="user.tel" required><br>-->
+        <!--<input type="password" placeholder="password" ng-model="user.password" required>-->
+
+        <div class="form-group">
+            <label for="InputUser">User name</label>
+            <input type="text" class="form-control" id="InputUser" placeholder="Username"  ng-model="user.username" required>
+        </div>
+        <div class="form-group">
+            <label for="InputPassword">Password</label>
+            <input type="text" class="form-control" id="InputPassword" placeholder="Password"  ng-model="user.password" required>
+        </div>
+        <div class="form-group">
+            <label for="InputEmail">Email address</label>
+            <input type="text" class="form-control" id="InputEmail" placeholder="Email address"  ng-model="user.email" required>
+        </div>
+        <div class="form-group">
+            <label for="InputTel">Phone number</label>
+            <input type="text" class="form-control" id="InputTel" placeholder="phone number"  ng-model="user.tel" required>
+        </div>
+    </form>
+    <div>
+        <small>{{message}}</small>
+    </div>
+    <button class="btn btn-success" ng-click="register()">Register</button>
+    <a ui-sref="login" style="margin-left: 40px">Already have one? Please login here</a>
+</section>
