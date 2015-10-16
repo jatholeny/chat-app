@@ -46,8 +46,8 @@ img.btn_close{
 }
 
 #dialog{
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     background-color: #333333;
     border: 2px solid #ddd;
     padding: 10px;
@@ -58,12 +58,13 @@ img.btn_close{
     z-index: 9999;
     display: none;
 }
-form.assign fieldset{border: none}
+form.assign fieldset{border: none;padding:10px;}
 form.assign label{color: #999999}
 form.assign input,textarea{padding: 5px 2px;
     margin: 10px 0;
     background: #666666;
     color: #fff;
+    font-size: medium;
     border-bottom: 1px solid #333;
     border-left: 1px solid #000;
     border-right: 1px solid #333;
@@ -73,6 +74,9 @@ form.assign input,textarea{padding: 5px 2px;
     border-radius: 3px;
     resize: none;
 }
+textarea{width:100%; height:200px;margin:10px;}
+form.assign input {width:30%;margin:10px}
+
 form.assign .submit{
     border:1px solid #000000;
     -webkit-border-radius: 4px;
@@ -82,8 +86,9 @@ form.assign .submit{
     cursor: pointer;
     padding: 6px 6px 4px;
     width: 100%;
+    height:30px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 /*///////////////////////////////////////////*/
@@ -234,17 +239,6 @@ ul.chatMessages li.ownMsg{
     margin: 5px 45px 5px 20px;
 }
 
-/*#assigner{*/
-    /*margin: 5px;*/
-/*}*/
-
-/*#assignee{*/
-    /*margin: 5px;*/
-/*}*/
-
-/*.assign .submit{*/
-    /*margin-left: 5px;*/
-/*}*/
 
 
 ul.chatMessages li.ownMsg::before{
